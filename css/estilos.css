@@ -1,0 +1,305 @@
+/* Create four equal columns that floats next to each other */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/fondo.png);
+  background-size:auto;
+}
+button {
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.linea{
+  border-left: thick solid black;
+  border-width: 2px;
+
+}
+
+/*TITULOS EN LA LINEA*/
+.tit-a {
+    margin-top: 150px;
+    font-size: 17.5px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: initial;
+}
+
+/*NAVEGADOR*/
+
+.topnav {
+  width: 100%;
+font-weight: 500;
+
+  display: flex;
+  color: black;
+
+}
+.logo {
+    padding-left: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black!important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+
+.nav-opt {
+    /* padding-right: 32px; */
+    width: 90%;
+    padding-left: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*PRESENTACION*/
+
+
+.top {
+    display: flex;
+    flex-direction: column;
+    margin: 9% 20% 0 20%;
+}
+.top h1 {
+    font-size: 34.18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.top h2 {
+    font-size: 27.34px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.top h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+button#st {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 17.5px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+/*WORKS*/
+
+div#works {
+    margin: 5% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.w-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.w-1-i {
+    background-color: #D5D1F9;
+    padding: 5%;
+    border-radius: 30px 30px 0px 30px;
+}
+.w-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.w-2-d {
+    background-color: #D5D1F9;
+    padding: 5%;
+    border-radius: 30px 30px 30px 0px;
+}
+/*SERVICES*/
+div#services {
+    margin: 10% 10% 10% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bot-i {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+.bot-c {
+  display: flex;
+    flex-direction: row!important;
+}
+.b-ux {
+    background-color: #D5D1F9;
+    padding: 5%;
+    border-radius: 30px 30px 0px 0px;
+}
+.b-fe {
+    width: 50%;
+    background-color: #D5D1F9;
+    padding: 2%;
+    border-radius: 0px 0px 0px 30px;
+    margin-top: 24px;
+}
+.b-sm {
+    width: 50%;
+    background-color: #D5D1F9;
+    padding: 2%;
+    border-radius: 0px 0px 0px 30px;
+    margin-top: 24px;
+}
+.b-sm {
+    width: 50%;
+    background-color: #D5D1F9;
+    padding: 2%;
+    border-radius: 0px 0px 30px 0px;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.bot-d {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10%; */
+    padding: 5%;
+    margin-left: 24px;
+}
+
+
+/*CONTACT*/
+div#contact {
+    /* width: 90%; */
+    margin: 15% 10% 10% 10%;
+    display: flex;
+    flex-direction: revert;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.f-i {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.f-i-t {
+
+    padding-bottom: 20%;
+}
+.f-i-t h1 {
+    margin: 0px;
+    font-size: 36px;
+}
+.f-i-t h3 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.f-i-c {
+    display: flex;
+    flex-direction: column;
+    padding-top: 23%;
+    font-size: 17.5px;
+}
+.f-i-c ul {
+  display: flex;
+}
+.f-i-c ul {
+    display: flex;
+    flex-direction: initial;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0px;
+
+}
+.f-i-c ul a li {
+    list-style: none;
+    margin-right: 24px;
+}
+
+
+.f-d {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.f-d h2 {
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+form#formulario-mail {
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 30px; */
+}
+label {
+    font-size: 14px;
+    color: #C4C4C4;
+}
+input {
+    margin-bottom: 24px;
+    border-radius: 30px;
+    margin-top: 5px;
+    padding: 9px;
+}
+input#boton-enviar {
+    width: 95px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+input#campo-detalles {
+    padding-bottom: 70px;
+    border-radius: 10px!important;
+}
+div.vertical-line{
+width: 3px; /* Line width */
+ background-color: black; /* Line color */
+height: 100%; /* Override in-line if you want specific height. */
+float: left; /* Causes the line to float to left of content. */
+ }
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1440px) {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fondo-2.png);
+    background-size:auto;
+  }
+
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
