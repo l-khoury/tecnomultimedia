@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 27.34px;
+  }
+  h3 {
+    font-size: 17.5px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  nav li {
+  
+    color: white;
+  
+  }
+  a {text-decoration: none;
+    color: white;}
+  
+    nav li a {
+      color:white;
+    }
+    .contenedor {
+      margin:0 auto;
+      width: 1090px;
+    }
+    .topnav {
+      width: 100%;
+  
+      overflow: hidden;
+      display: flex;
+  
+    }
+  
+  
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  
+  
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+  
+    .topnav a.active {
+      border-bottom-color: #FFCE00;
+      border-bottom-style: solid;
+      border-bottom-width: 6px; /* Cambiando este valor, puedes cambiar el ancho del borde */
+    }
+    .logo{
+      width: 10%;
+      padding-left: 2%;
+    }
+    .nav-opt {
+      padding-right: 2%;
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+/* top imagen portada */
+
+.top{
+    background-image:url(../img/fondoanimales.png) ;
+    background-size: cover;
+    height: 350px;
+}
+
+/*titulo line*/
+
+#lineahor {
+    border-bottom-color: #FFCE00;
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+}

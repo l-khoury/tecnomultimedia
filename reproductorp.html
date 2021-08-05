@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>National Geographic en español</title>
+  <link rel="stylesheet" href="css/estilospodcastR.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+
+<!-- Incluimos wavesurfer.js desde cdnjs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.4/wavesurfer.min.js"></script>
+ 
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body >
+    <div class="flecha">
+        <img src="img/flechaizq.png">
+    </div>
+  
+  <!-- Define los elementos HTML donde waveform se cargara -->
+  <div id="waveform">
+    <progress id="progress" class="progress progress-striped" value="0" max="100"></progress>
+  </div>
+ 
+  <script>
+    var ctx = document.createElement('canvas').getContext('2d');
+    var linGrad = ctx.createLinearGradient(0, 64, 0, 200);
+    linGrad.addColorStop(0.5, 'rgba(255, 255, 255, 1.000)');
+    linGrad.addColorStop(0.5, 'rgba(183, 183, 183, 1.000)');
+ 
+    var wavesurfer = WaveSurfer.create({
+      // Usa ID o NOMBRE DE CLASE(CLASS) del elemento que creo como selector
+      container: '#waveform',
+      // El color puede ser para sea un simple Color CSS o gradiente Canvas
+      waveColor: linGrad, // es esto o esto '#000'
+      progressColor: 'hsla(200, 100%, 30%, 0.5)',
+      cursorColor: '#fff',
+      // Este parametro hace que el aspecto del waveform se paresta a el reproductor de SoundCloud
+      barWidth: 3,
+      interact: false
+    });
+ 
+    wavesurfer.on('loading', function (percents) {
+      document.getElementById('progress').value = percents;
+    });
+ 
+    wavesurfer.on('ready', function (percents) {
+      document.getElementById('progress').style.display = 'none';
+    });
+ 
+    
+    wavesurfer.load("audio/elefantes-tailandia.wav")
+  </script>
+ 
+  <div class="controls">
+    <button class="btn btn-primary" onclick="wavesurfer.skipBackward()">
+      <i class="fa fa-step-backward"></i>
+      Atras
+    </button>
+ 
+    <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+      <i class="fa fa-play"></i>
+      Play
+      /
+      <i class="fa fa-pause"></i>
+      Pausa
+    </button>
+ 
+    <button class="btn btn-primary" onclick="wavesurfer.skipForward()">
+      <i class="fa fa-step-forward"></i>
+      Adelante
+    </button>
+ 
+    <button class="btn btn-primary" onclick="wavesurfer.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Silenciar
+    </button>
+    </div>
+</body>
+</html>

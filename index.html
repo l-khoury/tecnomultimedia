@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <title>National Geographic</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  
+</head>
+<body>
+
+  <div class="top" id="fondo">
+    <div class="topnav">
+      <div class="logo">
+        <img href="index.html" src="img/logo.png" alt="" >
+      </div>
+
+      <div class="nav-opt">
+
+
+        <a class="active"  href="index.html">INICIO</a>
+        <a href="#news">ANIMALES</a>
+        <a href="#contact">CIENCIA</a>
+        <a href="#about">TRAVELER</a>
+        <a  href="">EL MUNDO</a>
+        <a href="podcast.html">PODCAST</a>
+        <a href="juegos.html">JUEGOS</a>
+        <a href="programacion.html">PROGRAMACIÓN TV</a>
+        <a class="navbar-brand" href="#">
+          <img src="img/buscador.png" alt="" >
+        </a>
+        <a class="navbar-brand" id="loginbtn" >
+          <img src="img/perfil.png" alt="" >
+        </a>
+
+      </div>
+    </div>
+
+    <div class="contenedor">
+
+
+      <!-- popup form -->
+      <div class="loginmostrar">
+
+
+        <div class="containerlogin">
+          <div class="rowlogin">
+            <div class="col-md-5 mx-auto">
+              <div id="first">
+                <div class="myform form ">
+                  <div class="cerrar">
+                    <img id="x"src="img/x.png">
+                  </div>
+                  <div class="mb-3">
+                    <div class="logintit">
+                      <h2>Logueate para conocer contenido exclusivo</h2>
+                    </div>
+                  </div>
+                  <form  id="formulariologin"action="" method="post" name="login">
+                    <div class="form-group text-dark">
+                      <label id="emailS" for="exampleInputEmail1">Email</label>
+                      <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="marjo@gmail.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Contraseña</label>
+                      <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="*****">
+                    </div>
+
+                    <div class="col-md-12 text-center ">
+                      <button id="logbtn" type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">CONTINUAR</button>
+                    </div>
+                    <div class="col-md-12 ">
+                      <div class="login-or">
+                        <hr class="hr-or">
+                        <span class="span-or">or</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <p class="text-center-log">
+                        <a href="javascript:void();" class="google btn mybtn"><img id="iconolog" src="img/google.png"><i class="fa fa-google-plus">
+                        </i>Iniciar sesión con Google
+                      </a>
+                    </p>
+
+                    <p class="text-center-log">
+                      <a href="javascript:void();" class="google btn mybtn"><img id="iconolog"src="img/fb.png"><i class="fa fa-google-plus">
+                      </i> Iniciar sesión con Facebook
+                    </a>
+
+                  </p>
+
+                </div>
+                <div class="form-group">
+                  <p class="textoregistrarse">¿No tienes una cuenta? <a href="#" id="signup">Registrarse</a></p>
+
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div id="second">
+            <div class="myform form ">
+              <div class="navegacion">
+                <div class="atras">
+                  <a href="#first" ><img id="atras"src="img/flechaizq.png"></a>
+
+                </div>
+                <div class="cerrar">
+
+                  <img id="x"src="img/x.png">
+                </div>
+              </div>
+
+              <div class="logo mb-3">
+                <div class="col-md-12 text-center">
+                  <h2>Crea tu cuenta</h2>
+                </div>
+              </div>
+              <form action="#" name="registration">
+                <div class="form-group">
+
+                  <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+
+                  <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Apellido">
+                </div>
+
+                <div class="form-group">
+
+                  <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Contraseña">
+                </div>
+
+                <div class="check">
+                  <input type="checkbox" id="cbox1" value="first_checkbox">
+                  <p id="checkp">¡Sí! Me gustaría recibir actualizaciones, ofertas <br> especiales y otra información de National <br> Geographic y The Walt Disney Family of <br> Companies.</p>
+                  <p id="checkp">Al crear una cuenta, acepto los Términos de uso y <br> reconozco que he leído la Política de privacidad.</p>
+                  <p id="checkp"> Mi país/región: Argentina. Cambiar</p>
+                </div>
+
+
+
+
+                <div class="col-md-12 text-center mb-3">
+                  <button   id="logbtn"type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">CREAR CUENTA</button>
+                </div>
+                <div class="col-md-12 ">
+                  <div class="text-f">
+                    <p class="textoregistrarse">¿Ya tienes una cuenta? <a href="#first" id="signup">Iniciar sesión</a></p>
+                    <p class="textoregistrarse">¿Necesitas ayuda? Visita nuestro Centro de Soporte</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin pop up form-->
+
+
+  <div class="top-b">
+
+
+    <div class="tit">
+      <h1><span id="lineahor">NOT</span>ICIAS DEL DÍA</h1>
+    </div>
+
+    <div class="card-op">
+      <div class="op">
+        <img src="img/botellas.png">
+        <div class="op-text">
+          <p id="ptop">¿En qué parte del mundo se produce más plastico?</p>
+        </div>
+      </div>
+      <div class="op">
+        <img src="img/rana.png">
+        <div class="op-text">
+          <p id="ptop">Descubren una ‘rana zombie’ en el Amazonas.</p>
+        </div>
+      </div>
+      <div class="op-2">
+        <div class="op-2-1">
+          <img src="img/bicho.png">
+          <div class="op2-text">
+            <p id="ptop">Si le tienes miedo a los insectos, no mires esto.</p>
+          </div>
+        </div>
+        <div class="op-2-1">
+          <img src="img/oceano.png" alt="">
+          <div class="op2-text">
+            <p id="ptop">Hay un nuevo océano: conoce el océano Austral.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="boton-n">
+      <a href=""><button type="button" class="btn" name="button">CONOCER MÁS </button></a>
+    </div>
+
+
+  </div>
+</div>
+
+</div>
+
+<div class="mid"id="fondodos">
+
+  <div class="descubrimas">
+
+
+
+    <div class="contenedor">
+
+      <div class="tit">
+        <h2><span id="lineahor">DESC</span>UBRÍ MÁS SOBRE</h2>
+      </div>
+
+
+      <!--COMIENZA "DESCUBRÍ MAS SOBRE"-->
+
+      <div class="cards-des">
+        <a href="podcast.html"><div id="podd" class="cont-des">
+          <img src="img/pod.png" alt="">
+        </div></a>
+        <a href="programacion.html"><div class="cont-des">
+          <img src="img/tvv.png" alt="">
+        </div></a>
+        <div class="cont-des">
+          <img src="img/vivos.png" alt="">
+        </div>
+        <div class="cont-des">
+          <img src="img/eventos.png" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<!--COMIENZAN CARDS TEMATICAS-->
+<div class="contenedor">
+
+
+  <div class="cards-t">
+    <h2><span id="lineahor">CIE</span>NCIA</h2>
+
+    
+
+    <div class="scrolling-wrapper">
+      
+      <div class="card">
+        <img src="img/eclipse.png">
+        <div class="op-text">
+          <p class="card-text">Llega un nuevo eclipse solar:<br> ¿Dónde se podrá verlo?</p></div>
+        </div>
+        <div class="card">
+          <img src="img/redes.png">
+          <div class="op-text">
+            <p class="card-text">Lo que hay que saber sobre la hipótesis<br> de que la COVID-19 se fugó de un<br> laboratorio.</p></div>
+          </div>
+          <div class="card">
+            <img src="img/personas.png">
+            <div class="op-text">
+              <p class="card-text">Navegar indiscriminadamente en las<br> redes sociales puede generar "cibermareo".</p></div>
+            </div>
+            <div class="card">
+              <img src="img/cienciascroll.png">
+              <div class="op-text">
+                <p class="card-text">¿Qué pueden enseñarnos los chimpancés<br>salvajes sobre el envejecimiento saludable?</p></div>
+              </div>
+              <div class="card">
+                <img src="img/cienciavermas.png">
+                <div class="op-text">
+                  <p class="card-text">VER MÁS</p></div>
+                </div>
+              
+              </div>
+
+
+            </div>
+            
+
+            <!--TRAVELER -->
+            <div class="cards-t">
+              <h2><span id="lineahor">TRA</span>VELER</h2>
+
+              <div class="scrolling-wrapper">
+                <div class="card">
+                  <img src="img/ny.png">
+                  <div class="op-text">
+                    <p class="card-text">Nueva York está lista para reabrir:<br> 15 imperdibles en tu próximo viaje a la<br> Gran Manzana</p></div>
+                  </div>
+                  <div class="card">
+                    <img src="img/color.png">
+                    <div class="op-text">
+                      <p class="card-text">¿Estás planeando viajar a Argentina?<br> Te decimos todo lo que tienes que saber.</p></div>
+                    </div>
+                    <div class="card">
+                      <img src="img/viaje.png">
+                      <div class="op-text">
+                        <p class="card-text">Viajeros cruzan fronteras en busca <br>de vacunas contra la COVID-19.</p></div>
+                      </div>
+                      <div class="card">
+                        <img src="img/travelerscroll.png">
+                        <div class="op-text">
+                          <p class="card-text">¿Cuantas aves hay en el mundo?</p></div>
+                        </div>
+                        <div class="card">
+                          <img src="img/travelervermas.png">
+                          <div class="op-text">
+                            <p class="card-text">VER MÁS</p></div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                      <!--EL MUNDO -->
+                      <div class="cards-t">
+                        <h2><span id="lineahor">EL</span> MUNDO</h2>
+
+                        <div class="scrolling-wrapper">
+                          <div class="card">
+                            <img src="img/tornado.png">
+                            <div class="op-text">
+                              <p class="card-text">Tornados 101: cómo se forman,<br> cómo se clasifican y dónde ocurren.</p></div>
+                            </div>
+                            <div class="card">
+                              <img src="img/mar.png">
+                              <div class="op-text">
+                                <p class="card-text">Colapsa el icónico Arco de Darwin<br> de las Islas Galápagos.</p></div>
+                              </div>
+                              <div class="card">
+                                <img src="img/olas.png">
+                                <div class="op-text">
+                                  <p class="card-text">Hay un nuevo océano:<br> conoce el océano Austral.</p></div>
+                                </div>
+                                <div class="card">
+                                  <img src="img/elmundoscroll.png">
+                                  <div class="op-text">
+                                    <p class="card-text">El derrumbe del edificio de Miami<br> destaca la importancia de considerar el<br> aumento del nivel del mar</p></div>
+                                  </div>
+                                  <div class="card">
+                                    <img src="img/elmundovermas.png">
+                                    <div class="op-text">
+                                      <p class="card-text">VER MÁS</p></div>
+                                    </div>
+
+                                  </div>
+
+
+                                </div>
+                                <!-- ANIMALES-->
+                                <div class="cards-t">
+                                  <h2><span id="lineahor">ANI</span>MALES</h2>
+
+                                  <div class="scrolling-wrapper">
+                                    <a href="nota.html"><div class="card">
+                                      <img src="img/elefante.png">
+                                      <div class="op-text">
+                                        <p class="card-text">Los Elefantes empleados para el turismo<br> en Tailandia resienten las consecuencias<br> de los encierros pandemicos</p></div>
+                                      </div></a>
+                                      <div class="card">
+                                        <img src="img/mariposa.png">
+                                        <div class="op-text">
+                                          <p class="card-text">Millones de mariposas cruzan el Sahara<br> en la migración más larga del<br> reino animal</p></div>
+                                        </div>
+                                        <div class="card">
+                                          <img src="img/panda.png">
+                                          <div class="op-text">
+                                            <p class="card-text">El zoológico más antiguo de Japón<br> celebra el nacimiento de dos nuevas<br> crías de panda.</p></div>
+                                          </div>
+                                          <div class="card">
+                                            <img src="img/animalesscroll.png">
+                                            <div class="op-text">
+                                              <p class="card-text">Las ballenas jorobadas no pueden<br> tragarse a un ser humano:<br> descubre el por qué</p></div>
+                                            </div>
+                                            <div class="card">
+                                              <img src="img/animalesvermas.png">
+                                              <div class="op-text">
+                                                <p class="card-text">VER MÁS</p></div>
+                                              </div>
+
+                                            </div>
+
+
+                                          </div>
+
+
+
+                                          <!--TERMINAN CARDS TEMATICAS -->
+
+                                          <div class="juegos">
+                                            <div class="j-abajo" >
+                                              <a href=""><div class="titulo-j">
+
+
+                                                <h2>DESCUBRÍ</h2>
+                                              </div>
+                                              <img src="img/ave.png" class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="j-arriba">
+                                              <div class="titulo-j">
+                                                <h2>JUEGOS</h2>
+                                              </div>
+                                              <div class="boton-j">
+                                                <a href="juegos.html"><button type="button" class="btn" name="button">VAMOS </button></a>
+                                              </div>
+
+                                              <img src="img/tortuga.png" class="img-fluid" alt="...">
+                                            </div>
+                                          </div></a>
+                                        </div> <!--CIERRA CONTENEDOR-->
+
+                                        <!--FOOTER-->
+                                        <footer>
+                                          <div class="logo-bot">
+                                            <img src="img/logo.png" alt="LOGO NATGEO">
+                                          </div>
+                                          <div class="editorial">
+                                            <a class="" href="index.html">AVISO DE PRIVACIDAD</a>
+                                            <a href="#news">CARAS</a>
+                                            <a href="#contact">COCINA FÁCIL</a>
+                                            <a href="#about">VANIDADES</a>
+                                            <a href="">TU</a>
+                                            <a href="#news">MUY INTERESANTE</a>
+                                            <a href="#contact">COSMOPOLITAN</a>
+                                            <a href="#about">ESQUIRE</a>
+                                            <a href="#about">HARPER’S BAZAAR</a>
+                                          </div>
+
+                                          <p>EDITORIAL TELEVISA S.A. DE C.V. TODOS LOS DERECHOS RESERVADOS. TBG - EDITORIAL TELEVISA - NEWS/INFORMATION - GENERAL NEWS </p>
+
+                                        </footer>
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                        <script src="js/index.js"> </script> <!--link al archivo js-->
+
+                                      </body>
+                                      </html>

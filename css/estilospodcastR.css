@@ -1,0 +1,79 @@
+body{
+    background-image: url(../img/fondoelefantes.png) ;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
+    
+}
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    
+}
+span {
+    font-size: 16px;
+    color: rgba(200, 200, 200, 0.6);
+}
+p{
+    font-size: 17.5px;
+    margin-bottom: 24px;
+}
+.flecha {
+    padding-top: 24px;
+    padding-left: 24px;
+}
+.contenedor {
+
+    margin:0 auto;
+    width: 980px;
+  }
+  .contenedorinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 72%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 20px;
+    /* margin: 4%; */
+    margin-top: 10%;
+    padding: 24px;
+}  
+
+button {
+    display: flex;
+        justify-content: center;
+        border-style: none;
+        align-items: center;
+        background-color: #FFCE00;
+        font-size: 13px;
+        border-radius: 12px;
+        font-style: normal;
+        font-weight: bold;
+        color: black;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 24px;
+        margin-right: 32px;
+  }
+
+  a {
+      font-size: 14px;
+      color:white ;
+      
+      text-decoration-color:#FFCE00 ;
+     
+  }
+  .contbtn {
+    display: flex;
+    flex-direction: initial;
+    align-items: baseline;
+}
+
+  #aspoti {
+      text-decoration: none;
+      list-style: none;
+  }
